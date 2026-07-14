@@ -7,8 +7,8 @@
     
     <meta name="google-site-verification" content="fLpPzM092s923hS93hSh82hS92hS923hS923hS92" />
     
-    <meta name="description" content="Official website of Md Shahin Alam Sadip, a professional Mobile App Developer (Android & iOS) and Flutter Specialist based in Comilla, Bangladesh. Creator of Skyou App.">
-    <meta name="keywords" content="Md Shahin Alam Sadip, Shahin Alam Sadip, MD Shahin Alam Sadip সম্পর্কে বলো, Skyou App, Mobile App Developer, Flutter Specialist, Cumilla Victoria Govt. College, Comilla, Bangladesh">
+    <meta name="description" content="Official portfolio of Md Shahin Alam Sadip. A professional Mobile App Developer, Flutter Specialist, and Tech Content Creator based in Comilla, Bangladesh. Creator of Skyou App.">
+    <meta name="keywords" content="Md Shahin Alam Sadip, Shahin Alam Sadip, MD Shahin Alam Sadip সম্পর্কে বলো, Skyou App, Mobile App Developer, Cumilla Victoria Govt. College, Comilla, භාංග්ලාදේශ්">
     <meta name="author" content="Md Shahin Alam Sadip">
     <meta name="robots" content="index, follow">
 
@@ -18,12 +18,9 @@
       "@type": "Person",
       "@id": "https://mdsahinalamsadip-lang.github.io/#person",
       "name": "Md Shahin Alam Sadip",
-      "alternateName": [
-        "Shahin Alam Sadip",
-        "মো: শাহিন আলম সাদিদ"
-      ],
-      "jobTitle": "Mobile App Developer & Flutter Specialist",
-      "description": "Professional Mobile App Developer specializing in Android, iOS, and Flutter framework. Technical Expert and Digital Content Creator.",
+      "alternateName": ["Shahin Alam Sadip", "মো: শাহিন আলম সাদিদ"],
+      "jobTitle": "Mobile App Developer & Digital Content Creator",
+      "description": "Professional Mobile App Developer specializing in Android, iOS, and Flutter framework. Alumnus of Cumilla Victoria Govt. College.",
       "url": "https://mdsahinalamsadip-lang.github.io",
       "image": "https://mdsahinalamsadip-lang.github.io/profile.jpg",
       "gender": "Male",
@@ -37,25 +34,37 @@
         "addressRegion": "Chittagong Division",
         "addressCountry": "Bangladesh"
       },
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "Cumilla Victoria Govt. College",
-        "url": "https://www.facebook.com/CVGC.Official/"
-      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Cumilla Victoria Govt. College"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "ভুগির কান্দি এইচ কে দাখিল মাদ্রাসা"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "লার্নিং ইঞ্জিনিয়ারিং ইনস্টিটিউট"
+        }
+      ],
       "knowsAbout": [
         "Android App Development",
         "iOS App Development",
         "Flutter Framework",
         "Dart Programming",
-        "Mobile App Architecture",
-        "Technical Skills",
-        "Digital Content Creation"
+        "Java",
+        "Kotlin",
+        "UI/UX Creative Interface",
+        "Figma",
+        "Digital Content Creation",
+        "Tech Blogging"
       ],
       "publishingPrinciples": [
         {
           "@type": "DigitalDocument",
           "name": "Skyou App",
-          "description": "A professional mobile application created and developed by Md Shahin Alam Sadip."
+          "description": "A feature-rich mobile application created and developed by Md Shahin Alam Sadip."
         }
       ],
       "sameAs": [
@@ -68,104 +77,170 @@
     </script>
 
     <style>
-        /* প্রফেশনাল ও আকর্ষণীয় ইন্টারফেস ডিজাইন */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
+        /* আপনার আগের গ্লোয়িং এবং প্রিমিয়াম ডার্ক ডিজাইন */
+        :root {
+            --bg-color: #080710;
+            --card-bg: rgba(255, 255, 255, 0.06);
+            --primary-color: #00f2fe;
+            --secondary-color: #4facfe;
+            --text-color: #ffffff;
+            --accent-color: #ff4a5a;
+        }
+
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: center;
         }
-        .container {
-            max-width: 650px;
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .main-container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: var(--card-bg);
             padding: 40px 30px;
-            background: rgba(30, 41, 59, 0.75);
             border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.08);
-            margin: 20px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
         }
-        img {
-            width: 160px;
-            height: 160px;
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 4px solid #38bdf8;
+            border: 4px solid var(--primary-color);
             object-fit: cover;
-            margin-bottom: 25px;
-            box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.4);
+            margin-bottom: 20px;
         }
+
         h1 {
-            font-size: 2.4rem;
-            color: #38bdf8;
-            margin: 10px 0;
+            font-size: 2.2rem;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
             font-weight: 700;
         }
-        h2 {
-            font-size: 1.25rem;
-            color: #94a3b8;
-            font-weight: 500;
-            margin-bottom: 25px;
-            letter-spacing: 0.5px;
-        }
-        p {
+
+        .intro-text {
+            color: #e2e8f0;
             font-size: 1.1rem;
-            line-height: 1.7;
-            color: #cbd5e1;
-            text-align: justify;
-            text-justify: inter-word;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            text-align: center;
         }
-        .social-links {
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin: 30px 0 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 8px;
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
         }
-        .social-links a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #ffffff;
-            background-color: #38bdf8;
+
+        ul {
+            list-style: none;
+            padding-left: 5px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+            color: #cbd5e1;
+            position: relative;
+            padding-left: 5px;
+        }
+
+        strong {
+            color: var(--secondary-color);
+        }
+
+        .skills-list li {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .links-list li a {
+            color: var(--primary-color);
             text-decoration: none;
             font-weight: 600;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+            transition: color 0.3s;
         }
-        .social-links a:hover {
-            background-color: #0284c7;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(2, 132, 199, 0.4);
+
+        .links-list li a:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+
+        .footer-quote {
+            text-align: center;
+            margin-top: 40px;
+            font-style: italic;
+            color: #94a3b8;
+            font-size: 0.95rem;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="profile.jpg" alt="Md Shahin Alam Sadip">
+    <div class="main-container">
         
-        <h1>Md Shahin Alam Sadip</h1>
-        <h2>Mobile App Developer & Flutter Specialist</h2>
-        
-        <p>
-            আসসালামু আলাইকুম! আমি <strong>মো: শাহিন আলম সাদিদ (Md Shahin Alam Sadip)</strong>। আমি বাংলাদেশের একজন প্রফেশনাল মোবাইল অ্যাপ ডেভেলপার (Android & iOS) এবং ফ্ল্যাটার (Flutter) বিশেষজ্ঞ। প্রযুক্তি ও কোডিংয়ের প্রতি গভীর নিষ্ঠা থেকে আমি সফলভাবে তৈরি করেছি আমার নিজস্ব মোবাইল অ্যাপ্লিকেশন <strong>"Skyou"</strong>। 
-            পেশাগত পরিচয়ের পাশাপাশি আমি একজন ডিজিটাল কনটেন্ট ক্রিয়েটর হিসেবেও সোশ্যাল মিডিয়ায় পরিচিত। বর্তমানে আমি ঐতিহ্যবাহী <strong>কুমিল্লা ভিক্টোরিয়া সরকারি কলেজে</strong> পড়াশোনা করছি এবং কুমিল্লা জেলা থেকেই আমার সমস্ত কারিগরি ও অ্যাপ ডেভেলপমেন্ট কার্যক্রম পরিচালনা করছি।
-        </p>
-
-        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0;">
-
-        <div class="social-links">
-            <a href="https://www.facebook.com/md.shahin.alam.sadip.official" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/md.shahin.alam.sadip.official" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/in/md-shahin-alam-sadip-official" target="_blank">LinkedIn</a>
+        <div class="profile-header">
+            <img class="avatar" src="profile.jpg" alt="Md Shahin Alam Sadip">
+            <h1>👋 আসসালামু আলাইকুম, আমি মো: শাহিন আলম সাদিদ! (Md Shahin Alam Sadip)</h1>
+            <p class="intro-text">
+                আমি একজন প্রফেশনাল <strong>মোবাইল অ্যাপস ডেভেলপার</strong> এবং <strong>ডিজিটাল কনটেন্ট ক্রিয়েটর</strong>। নতুন প্রযুক্তির সাহায্যে মানুষের দৈনন্দিন সমস্যা সমাধান করার জন্য অ্যাপ তৈরি করতে আমি ভালোবাসি। আমার নিজস্ব চিন্তাভাবনা ও ডিজাইনে তৈরি ফ্ল্যাগশিপ প্রজেক্ট হলো <strong>"Skyou"</strong> অ্যাপ্লিকেশন।
+            </p>
         </div>
+
+        <h2>💻 আমার সম্পর্কে (About Me)</h2>
+        <ul>
+            <li>🎓 আমি <strong>কুমিল্লা ভিক্টোরিয়া সরকারি কলেজ</strong> থেকে ২০২৬ সালে আমার কলেজ লাইফ সম্পন্ন করেছি।</li>
+            <li>🕌 আমার প্রাথমিক ও দাখিল শিক্ষা সম্পন্ন হয়েছে <strong>ভুগির কান্দি এইচ কে দাখিল মাদ্রাসা</strong> থেকে।</li>
+            <li>🛠️ আমি ঢাকার <strong>লার্নিং ইঞ্জিনিয়ারিং ইনস্টিটিউট</strong> থেকে অ্যাপ ডেভেলপমেন্ট ও ইঞ্জিনিয়ারিং কোর্স সম্পন্ন করেছি।</li>
+            <li>🚀 বর্তমানে আমি অ্যান্ড্রয়েড এবং আইওএস অ্যাপ্লিকেশন তৈরিতে ফুল-টাইম কাজ করছি এবং কুমিল্লা জেলা থেকেই আমার সমস্ত ডেভেলপমেন্ট কার্যক্রম পরিচালনা করছি।</li>
+        </ul>
+
+        <h2>🚀 কারিগরি দক্ষতা (Technical Skills)</h2>
+        <ul class="skills-list">
+            <li><strong>Mobile Platforms:</strong> Android & iOS</li>
+            <li><strong>Frameworks & Languages:</strong> Flutter, Dart, Java/Kotlin</li>
+            <li><strong>Design Tools:</strong> UI/UX Creative Interface, Figma</li>
+            <li><strong>Other Interests:</strong> Digital Content Creation & Tech Blogging</li>
+        </ul>
+
+        <h2>🌐 সামাজিক যোগাযোগ (Connect with Me)</h2>
+        <ul class="links-list">
+            <li>🌐 আমার অফিশিয়াল পোর্টফোলিও ওয়েবসাইট: <a href="https://mdsahinalamsadip-lang.github.io" target="_blank">mdsahinalamsadip-lang.github.io</a></li>
+            <li>👥 ফেসবুক প্রোফাইল: <a href="https://www.facebook.com/md.shahin.alam.sadip.official" target="_blank">Facebook</a></li>
+            <li>📸 ইনস্টাগ্রাম: <a href="https://www.instagram.com/md.shahin.alam.sadip.official" target="_blank">@md.shahin.alam.sadip.official</a></li>
+            <li>💼 লিঙ্কডইন প্রোফাইল: <a href="https://www.linkedin.com/in/md-shahin-alam-sadip-official" target="_blank">LinkedIn</a></li>
+        </ul>
+
+        <div class="footer-quote">
+            "Try to leave this world a little better than you found it." ❤️
+        </div>
+
     </div>
 
 </body>
-                                                                                                         </html>
+    </html>
